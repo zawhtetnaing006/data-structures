@@ -59,3 +59,24 @@ A queue is a linear data structure that follows the First In, First Out (FIFO) p
 
 ### Examples:
 - [Implementation in PHP](queue/example.php)
+
+## Binary Search Tree (BST)
+
+### Good
+- Efficient for search, insertion, and deletion operations (average O(log n) time complexity)
+
+### Bad
+- Performance can degrade to O(n) in the worst case if the tree becomes unbalanced
+
+### Where to use?
+- Searching and sorting data
+- Implementing associative arrays
+
+### Structure
+- Node
+  - Value
+  - Left child (all values are less)
+  - Right child (all values are greater)
+  
+### Examples:
+- [Implementation in PHP](binary_search_tree/example.php)
