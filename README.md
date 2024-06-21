@@ -1,7 +1,5 @@
 # Data Structures
 
-# Data Structures
-
 - [Linked List](#linked-list)
 - [Stack](#stack)
 - [Queue](#queue)
