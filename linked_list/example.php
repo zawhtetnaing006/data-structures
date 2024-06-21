@@ -12,52 +12,27 @@ $linked_list->push('thanks');
 $linked_list->push('for'); 
 $linked_list->push('reading');
 
-echo "The linked list contains: \n";
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    echo $linked_list->current() . " ";
-}
+echo "\nCheck current element\n";
+$linked_list->rewind(); // Go to the start of the list
+echo $linked_list->current(); //check current element
+
 echo "\n";
 
-// Insert an element at the beginning
-$linked_list->unshift('Hello,');
+echo "\nMove to next element\n";
+$linked_list->next(); //move to next element
+echo $linked_list->current(); // check current element 
 
-echo "After inserting at the beginning: \n";
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    echo $linked_list->current() . " ";
-}
-echo "\n"; 
-
-// Remove the first element
-$linked_list->shift();
-
-echo "After removing the first element: \n";
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    echo $linked_list->current() . " ";
-}
 echo "\n";
 
-// Remove the last element
-$linked_list->pop();
+echo "\nMove to prev element\n";
+$linked_list->prev(); //move to prev element
+echo $linked_list->current(); // check current element 
 
-// Print the updated list
-echo "After removing the last element: \n";
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    echo $linked_list->current() . " ";
-}
-echo "\n"; 
+echo "\n";
 
-// Search and delete a specific element
-$search = 'for';
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    if ($linked_list->current() == $search) {
-        $linked_list->offsetUnset($linked_list->key());
-        break;
-    }
+//looping the list
+echo "\nlooping the list\n";
+for($linked_list->rewind();$linked_list->valid();$linked_list->next()) {
+    echo $linked_list->current();
+    echo "\n";
 }
-
-echo "After deleting the element 'for': \n";
-for ($linked_list->rewind(); $linked_list->valid(); $linked_list->next()) {
-    echo $linked_list->current() . " ";
-}
-echo "\n"; // Output: thanks
-?>
