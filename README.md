@@ -32,7 +32,6 @@ Same as linked list + also keeps track of the previous node in the list:
 A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. This means that the last element added to the stack will be the first one to be removed.
 
 ### Good
-- Simple and easy to implement
 - Efficient for operations that only require adding or removing elements from the top
 
 ### Bad
@@ -42,8 +41,21 @@ A stack is a linear data structure that follows the Last In, First Out (LIFO) pr
 - Function call management ([call stack](https://medium.com/@zawhtetnaing/a-glimpse-into-javascript-magic-event-loop-37babb34b12e))
 - Undo mechanisms in text editors
 
-### Operations
-- Push, Pop, isEmpty
-
 ### Examples:
 - [Implementation in PHP](stack/example.php)
+
+## Queue
+A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed.
+
+### Good
+- Useful for scenarios where elements need to be processed in order
+
+### Bad
+- Limited access: Only the front and rear elements can be accessed directly
+
+### Where to use?
+- Task scheduling 
+- Handling requests in web servers
+
+### Examples:
+- [Implementation in PHP](queue/example.php)
