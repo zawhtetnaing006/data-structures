@@ -1,5 +1,14 @@
 # Data Structures
 
+# Data Structures
+
+- [Linked List](#linked-list)
+- [Stack](#stack)
+- [Queue](#queue)
+- [Binary Search Tree (BST)](#binary-search-tree-bst)
+
+---
+
 ## Linked List
 
 ### Good
@@ -77,6 +86,7 @@ A queue is a linear data structure that follows the First In, First Out (FIFO) p
   - Value
   - Left child (all values are less)
   - Right child (all values are greater)
-  
+
 ### Examples:
 - [Implementation in PHP](binary_search_tree/example.php)
+---
